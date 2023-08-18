@@ -1,0 +1,28 @@
+{
+    "name": "sams-xpress-app",
+    "version": "1.0.0",
+    "description": "",
+    "main": "server/server.js",
+    "scripts": {
+        "start": "ts-node ./server/server.ts",
+        "dev": "nodemon -w server --exec \"npm start\"",
+        "install": "cd server && npm i && cd ../client && npm i",
+        "seed": "cd server && npm run seed",
+        "build": "cd client && npm run build"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@tsconfig/node18": "^18.2.0",
+        "@types/node": "^18.17.6",
+        "concurrently": "^5.3.0",
+        "nodemon": "^3.0.1",
+        "ts-node": "^10.9.1",
+        "typescript": "^5.1.6"
+    },
+    "dependencies": {
+        "@apollo/server": "^4.9.1",
+        "graphql": "^16.8.0",
+        "graphql-tag": "^2.12.6"
+    }
+}
